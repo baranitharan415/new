@@ -1,0 +1,154 @@
+:root
+{
+    --red:crimson;
+    --green:#53BF9D;
+    --yellow:#FFC54D;
+    --white:whitesmoke;
+}
+body,h2
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing
+{
+    background: url(/pexels-jessica-lewis-creative-858094.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    height: 100vh;
+
+}
+header a
+{
+    text-decoration: none;
+    color: var(--yellow);
+    min-width: 120px;
+}
+header
+{
+    display: flex;
+    padding: 1em;
+    row-gap: 1rm;
+    flex-wrap: wrap ;
+}
+#logo
+{
+    flex: 3;
+    font-size: 2.25em;
+    font-weight: bolder;
+}
+nav
+{
+    flex: 2;
+    display: flex;
+}
+nav a
+{
+    flex:1;
+}
+nav a:hover
+{
+    color: var(--green);
+}
+.maintext
+{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1
+{
+    color: var(--red);
+    font-size: 2em;
+    font-weight: bolder;
+}
+.tagline2
+{
+    color: var(--yellow);
+}
+.maintext div
+{
+    margin-top: .75em;
+}
+.maintext button
+{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+
+}
+.m
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    color: var(--white);
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+}
+#menu,#locheading
+{
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    font-size: 2.5em;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+}
+.m th
+{
+    color: var(--green);
+    font-size: 1.5em;
+}
+table
+{
+    width: 100%;
+    padding: 1em;
+}
+.m tr
+{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.m td:nth-child(1)
+{
+    flex: 1;
+    justify-self: left;
+}
+.m td:nth-child(2)
+{
+    justify-self: right;
+}
+.maincourse
+{
+    grid-row: span 2;
+}
+.locations
+{
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+}
+.locations h2
+{
+    color: var(--green);
+    margin-bottom: .8em;
+}
+.locations div
+{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
+footer
+{
+    background-color: black;
+    color: var(--white);
+    padding: .25em 1em;
+}
